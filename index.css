@@ -1,0 +1,116 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nanum+Gothic&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightpink; */
+}
+
+.container {
+    max-width: 600px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgb(0 0 0 / 10%);;
+    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); */
+    padding: 30px;
+    position: relative;
+}
+
+.container-content {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.container-content img {
+    object-fit: contain;
+    width: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: -16px;
+    top: -15px;
+}
+
+.container-content h1 {
+    /* text-align: justify; */
+    line-height: 1.5;
+    font-size: 1.4rem;
+    margin: 0;
+    padding-left: 30px; 
+}
+
+.author-name {
+    color:#867b7b;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.quote-btn {
+    display: flex;
+    margin-left: auto;
+    margin-top: 20px;   
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: #333;
+    box-shadow: 4px 3px 6px rgb(0 0 0 / 49%);
+}
+
+.quote-btn:hover {
+    transform: translateY(-3px);
+    transition: transform 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .container-content img {
+        width: 25px;
+    }
+    .container-content h1 {
+        font-size: 1rem;
+        padding-left: 25px; 
+    }
+    .author-name {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: auto;
+    }
+
+    .container-content img {
+        object-fit: contain;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: -10px;
+    top: -7px;
+}
+
+    .container-content h1 {
+        font-size: 1rem;
+    }
+    .quote-btn {
+        padding: 8px 16px;
+    }
+}
+
