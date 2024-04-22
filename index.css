@@ -16,12 +16,10 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    width: 90%;
+    width: 600px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 10px 10px 10px 10px rgb(0 0 0 / 10%);;
-    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); */
     padding: 30px;
     position: relative;
 }
@@ -42,7 +40,6 @@ body {
 }
 
 .container-content h1 {
-    /* text-align: justify; */
     line-height: 1.5;
     font-size: 1.4rem;
     margin: 0;
@@ -77,6 +74,44 @@ body {
     transition: transform 0.2s ease-in-out;
 }
 
+/* this is for the loader */
+
+.loader {
+    display: flex;
+    margin: auto;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* in this we add the animation for the come the container to the top of the page from the bottom of the page  */
+
+.container-animated {
+    transform: translateY(-100%);
+    animation: containerAnimations 1s ease ;
+}
+
+@keyframes containerAnimations {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* this is the css of the media query  */
+
 @media screen and (max-width: 480px) {
     .container-content img {
         width: 25px;
@@ -97,7 +132,7 @@ body {
     }
 
     .container-content img {
-        object-fit: contain;
+    object-fit: contain;
     width: 25px;
     height: 25px;
     margin-bottom: 10px;
@@ -113,4 +148,5 @@ body {
         padding: 8px 16px;
     }
 }
+
 
