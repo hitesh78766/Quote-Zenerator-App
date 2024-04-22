@@ -113,15 +113,21 @@ body {
 /* this is the css of the media query  */
 
 @media screen and (max-width: 480px) {
+
+    .container{
+        width: 300px;
+    }
+
     .container-content img {
-        width: 25px;
+        width: 20px;
+        height: 20px;
     }
     .container-content h1 {
         font-size: 1rem;
         padding-left: 25px; 
     }
     .author-name {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
 
